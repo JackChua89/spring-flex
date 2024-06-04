@@ -5,12 +5,29 @@
 	<parent>
 		<groupId>org.springframework.flex</groupId>
 		<artifactId>spring-flex-parent</artifactId>
-		<version>1.6.0.BUILD-SNAPSHOT</version>
+		<version>1.6.1.BUILD</version>
 		<relativePath>../spring-flex-parent</relativePath>
 	</parent>
 	<artifactId>spring-flex-core</artifactId>
 	<packaging>jar</packaging>
 	<name>Spring BlazeDS Integration Core</name>
+
+	<distributionManagement>
+		<repository>
+			<id>releases_maven</id>
+			<name>Datamine Nexus Releases Maven</name>
+			<url>http://172.22.22.9/nexus/content/repositories/releases_maven</url>
+		</repository>
+	</distributionManagement>
+
+	<pluginRepositories>
+		<pluginRepository>
+			<!-- To resolve jai_jt for example -->
+			<id>releases_maven</id>
+			<name>Datamine Nexus Releases Maven</name>
+			<url>http://172.22.22.9/nexus/content/repositories/releases_maven</url>
+		</pluginRepository>
+	</pluginRepositories>
 
 	<profiles>
 		<profile>
